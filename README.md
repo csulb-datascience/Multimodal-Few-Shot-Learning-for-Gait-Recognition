@@ -40,18 +40,8 @@ Where,
 
 # Results
 
-The following countour plots show the obtained distributions of ACC for the respective displayed lambda values as a function of the hyper-parameters gamma and nu for a fixed tau=-0.1, where the brighter yellow areas indicate rates greater than 90%. By comparing the plots, lambda=1.0 presents the broader brighter area which means the prototype loss for that lambda contributed to get a most robust system with weaker dependency respect to gamma and nu. 
-
-<img src="images/acc-lambda-v.png" width="70%">
-
-The effect of different values of tau is depicted by fixing gamma=2.2 and nu=0.06 for lambda=1.0. The plot below shows that TPR and ACC get considerably enhanced at tau smaller than 0. Therefore, it is recommended to choose an alternative tau instead of tau=0.0 for the decision boundary in the latent space.
-
-<img src="images/tau.png" width="50%">
-
-
+The following countour plots show the obtained distributions of ACC as a function of γ and ν for the CNN, RNN, and ensemble models respectivelly.
+<img src="images/acc.png" width="50%">
 
 # Contributors
 Nelson Minaya nelson.minaya@student.csulb.edu <br/>
-Sella Bae sella.bae@student.csulb.edu <br/>
-Yong-Min Shin jordan3414@yonsei.ac.kr <br/>
-Jin-Duk Park jindeok6@yonsei.ac.kr<br/>
