@@ -41,7 +41,7 @@ Where,
 # Results
 
 The following countour plots show the obtained distributions of ACC as a function of γ and ν for the CNN, RNN, and ensemble models respectivelly.<br/>
-<img src="images/acc.png" width="50%">
+<img src="images/acc.png" width="70%">
 
 # Contributors
 Nelson Minaya nelson.minaya@student.csulb.edu <br/>
