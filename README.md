@@ -51,7 +51,7 @@ The distribution of the TNRs is shown below. Contrary to the distributions of th
 
 <img src="images/tnr.png" width="70%">
 
-To determine the effect of τ, we specified separate values of γ and ν for the different models in the following experiment. We used γ = 1.9 and ν = 0.06 for the ensemble model, γ = 1.8 and ν = 0.06 for the CNN model, and γ = 2.2 and ν = 0.08 for the RNN model. In Figure the figure, we see that choosing a τ value smaller than 0 significantly improves the TPR and ACC. 
+To determine the effect of τ, we specified separate values of γ and ν for the different models in the experiment. We used γ = 1.9 and ν = 0.06 for the ensemble model, γ = 1.8 and ν = 0.06 for the CNN model, and γ = 2.2 and ν = 0.08 for the RNN model. In the figure, we see that choosing a τ value smaller than 0 significantly improves the TPR and ACC. 
 
 <img src="images/tau.png" width="70%">
 
