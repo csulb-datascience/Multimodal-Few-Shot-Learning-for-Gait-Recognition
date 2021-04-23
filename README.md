@@ -38,7 +38,7 @@ Where,
 - TN stands for True Negative and it is the total unit steps in the unknown test set that were classified correctly as an unknown participant.
 - FP stands for False Negative and it is the total unit steps in the unknown test set that were classified incorrectly as a known participant.
 
-# Results for Gait Recognition
+# Results
 
 The following countour plots show the obtained distributions of ACC for the respective displayed lambda values as a function of the hyper-parameters gamma and nu for a fixed tau=-0.1, where the brighter yellow areas indicate rates greater than 90%. By comparing the plots, lambda=1.0 presents the broader brighter area which means the prototype loss for that lambda contributed to get a most robust system with weaker dependency respect to gamma and nu. 
 
@@ -47,13 +47,6 @@ The following countour plots show the obtained distributions of ACC for the resp
 The effect of different values of tau is depicted by fixing gamma=2.2 and nu=0.06 for lambda=1.0. The plot below shows that TPR and ACC get considerably enhanced at tau smaller than 0. Therefore, it is recommended to choose an alternative tau instead of tau=0.0 for the decision boundary in the latent space.
 
 <img src="images/tau.png" width="50%">
-
-# Results for Common Attribution Map
-
-The following plots show the performance as a function of occluding relevant positions from higher to lower (O<sub>1</sub>,...,O<sub>5</sub>) for SA and LRP-e with fixed gamma=2.2, nu=0.06, tau=-0.1, and lambda=1.0. It is observable  the overall performance degradation for both methods in terms of TPR and ACC as we move backwards from occlusion of lower relevant positions (O<sub>5</sub>) to higher ones (O<sub>1</sub>).This implies that both SA and LRP-e can detect the most important unit step regions (O<sub>1</sub>) for the known-test set.
-
-<img src="images/sa.png" width="50%">
-<img src="images/lrp.png" width="50%">
 
 
 
