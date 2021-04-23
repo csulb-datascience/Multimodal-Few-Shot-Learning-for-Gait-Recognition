@@ -40,8 +40,13 @@ Where,
 
 # Results
 
-The following countour plots show the obtained distributions of ACC as a function of γ and ν for the CNN, RNN, and ensemble models respectivelly.<br/>
+The following countour plots show the obtained distributions of ACC as a function of γ and ν for the CNN, RNN, and ensemble models respectivelly. A comparison of the area in which the rates are greater than 90% (light green to yellow areas) indicates that the region of the ensemble model is broader than that of the regions of the CNN or RNN model. This means that the ensemble model has a weak dependency when selecting γ and ν, which affects the robustness of the recognition result<br/>
 <img src="images/acc.png" width="70%">
+
+<img src="images/tpr.png" width="70%">
+
+<img src="images/tnr.png" width="70%">
+
 
 # Contributors
 Nelson Minaya nelson.minaya@student.csulb.edu <br/>
