@@ -1,8 +1,16 @@
+# csulb-datascience
+#
+# Program to train the models.
+#
+# Authors: 
+#      Nelson Minaya, email: nelson.minaya@student.csulb.edu
+#      Nhat Anh Le,   email: nhat.le01@student.csulb.edu
+#
+# Date: June 2020
+#
+# Include a reference to this site if you will use this code.
+
 import os
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID" 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # use id from $ nvidia-smi
-
-
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
@@ -45,7 +53,7 @@ def save(saveAs, iteration, gamma, nu, threshold, noise, results, delta):
 
     
 #CSV file
-saveAs = "./summary_svm_encoder_cnn.csv"
+saveAs = "./summary_svm_cnn.csv"
 saveHeader(saveAs)    
     
 #load the dataset

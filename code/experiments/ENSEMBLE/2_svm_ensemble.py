@@ -1,6 +1,15 @@
-import os
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID" 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # use id from $ nvidia-smi
+# csulb-datascience
+#
+# Program to train the models.
+#   the results are saved in a csv file "summary.csv"
+#
+# Authors: 
+#      Nelson Minaya, email: nelson.minaya@student.csulb.edu
+#      Nhat Anh Le,   email: nhat.le01@student.csulb.edu
+#
+# Date: June 2020
+#
+# Include a reference to this site if you will use this code.
 
 
 import tensorflow as tf
