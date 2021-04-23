@@ -53,6 +53,8 @@ The distribution of the TNRs is shown below. Contrary to the distributions of th
 
  These distributions of the TNR explain why the ACC of the RNN model is significantly lower than the ACC of the CNN model.<br/>
 
+<img src="images/tau.png" width="70%">
+
 # Contributors
 Nelson Minaya nelson.minaya@student.csulb.edu <br/>
 Nhat Le nhat.le01@student.csulb.edu
