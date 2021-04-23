@@ -8,11 +8,11 @@ It is recommended to create a new environment and install the packages listed in
 pip install -r requirements.txt
 ```
 
-# Processes
-The implementation is divided in different processes whose scripts are in the folder "processes" of this repository:
+# Experiments
+This repository contains the code to perform experiments with the CNN, RNN, and the Ensemble individually. Each experiment is divided in two steps:
 
-- <b>1. Train encoder-decoder</b>: it trains the encoder-decoder model. It saves the trained encoder and the predicted embeddings for later processes (<i>Script: 1_train_encoder-decoder.py</i>).
-- <b>2. Train and test the classifier</b>: it trains the OSVM classifier with the few-shot learning method and test it with known-test and unknown test sets. It requires the predicted embeddings obtained when training the encoder-decoder. The results are saved in a CSV file for later plot and analysis (<i>Script: 2_train-test_osvm.py</i>).
+- <b>1. Train the encoder</b>: this script trains the encoder (CNN, RNN, or Ensemble). It saves the trained encoder and the predicted embeddings for the next step.
+- <b>2. Train and test the classifier</b>: it trains the OSVM classifier with the few-shot learning method and test it with known-unknown-test and unknown-unknown-test sets. It requires the predicted embeddings obtained in the previous step. The results are saved in a CSV file for later plot and analysis.
 
 # Datasets
 As is shown in the following image, the data was collected from 30 subjects and it was split into three sets: 
