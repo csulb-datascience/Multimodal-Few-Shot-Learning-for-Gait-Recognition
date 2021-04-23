@@ -40,13 +40,18 @@ Where,
 
 # Results
 
-The following countour plots show the obtained distributions of ACC as a function of γ and ν for the CNN, RNN, and ensemble models respectivelly. A comparison of the area in which the rates are greater than 90% (light green to yellow areas) indicates that the region of the ensemble model is broader than that of the regions of the CNN or RNN model. This means that the ensemble model has a weak dependency when selecting γ and ν, which affects the robustness of the recognition result<br/>
+The following countour plots show the obtained distributions of ACC as a function of γ and ν for the CNN, RNN, and ensemble models respectivelly. A comparison of the area in which the rates are greater than 90% (light green to yellow areas) indicates that the region of the ensemble model is broader than that of the regions of the CNN or RNN model. This means that the ensemble model has a weak dependency when selecting γ and ν, which affects the robustness of the recognition result.<br/>
 <img src="images/acc.png" width="70%">
+
+The distribution of the TPR is shown in the following plot. A comparison of the area in which the rates are greater than 93% (yellow), the region of the RNN model is slightly broader than that of the CNN model. The overall distribution of the ensemble model is similar to that of the RNN model.<br/>
 
 <img src="images/tpr.png" width="70%">
 
+The distribution of the TNRs is shown below. Contrary to the distributions of the TPR, the overall distribution of the ensemble model is almost identical to the distribution of the CNN model. In particular, a comparison of the area in which the rates are greater than 93% (yellow) reveals that the region of the CNN model is significantly broader than that of the RNN model.<br/>
+
 <img src="images/tnr.png" width="70%">
 
+ These distributions of the TNR explain why the ACC of the RNN model is significantly lower than the ACC of the CNN model.<br/>
 
 # Contributors
 Nelson Minaya nelson.minaya@student.csulb.edu <br/>
