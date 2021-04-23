@@ -1,5 +1,5 @@
 # Multimodal-Few-Shot-Learning-for-Gait-Recognition
-This repository is the official implementation of Multimodal-Few-Shot-Learning-for-Gait-Recognition paper, which proposes a system that learns a mapping from a multimodal time series collected using insole to a latent space to address the open set gait recognition problem.
+This repository is the official implementation of Multimodal-Few-Shot-Learning-for-Gait-Recognition paper, which proposes a system that learns a mapping from a multimodal time series collected using insole to a latent space to address the open set gait recognition problem. The system maps unit steps to embedding vectors using an ensemble consisting of a convolutional neural network and a recurrent neural network. To recognize each individual, the system learns a decision function using a one-class support vector machine from a few embedding vectors of the person in the latent space, then the system determines whether an unknown unit step is recognized as belonging to a known individual or not.
 
 # Requirements
 Some of the main packages used for this project are Tensorflow-gpu 1.14, Keras 2.2.4, and scikit-learn 0.23.2.
