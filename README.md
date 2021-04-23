@@ -1,13 +1,6 @@
 # Multimodal-Few-Shot-Learning-for-Gait-Recognition
 This repository is the official implementation of Multimodal-Few-Shot-Learning-for-Gait-Recognition paper, which proposes a system that learns a mapping from a multimodal time series collected using insole to a latent space to address the open set gait recognition problem.
 
-The code here implements an encoder-decoder network architecture that learns mapping from the input (the gait information consistent of unit steps) to a latent space (embeddings). The network utilizes two types of loss functions. The first one is based on the triplet loss function and it enforces that the distances in a latent space of homogeneous input pairs are smaller than those of heterogeneous input pairs. The second loss function minimizes the difference between reconstructed inputs and their corresponding prototypes. Only the encoder will be used in following processes after training (see process 1 in next sections).
-
-The resultant encoder from the previous process is used to predict the embedding vectors to train one-class support vector machine (OSVM) classifiers which are used to classify the unit steps. The classifiers are thereby capable of identifying whether a unit step belongs or not to any of the known classes (see process 2 in next sections).
-
-Also, it is implemented the analysis with Attribution map methods such as sensitivity analysis (SA) and layer-wise relevance propagation (LRP) which are available at the iNNvestigate toolbox (pypi.org/project/innvestigate/). It allows to identify the parts of the input that are relevant to the recognition performance (see process 3 in next sections).
-
-
 # Requirements
 Some of the main packages used for this project are Tensorflow-gpu 1.14, Keras 2.2.4, and scikit-learn 0.23.2.
 It is recommended to create a new environment and install the packages listed in requirements.txt:
@@ -26,10 +19,9 @@ As is shown in the following image, the data was collected from 30 subjects and 
 
 <img src="images/split.png" width="70%">
 
-- <b>Training set</b>: used to train the encoder-decoder network. It consists of all the unit steps of 16 individuals selected randomly.
-- <b>Known-test set</b>: it contains the unit steps of 7 individuals selected randomly from the 14 remaining people after selecting the training set. This dataset is divided in two subsets. The first subset consists of 10 unit steps for each individual and it is used for training the OSVM classifier. The second subset is the remaining steps of the same 7 individuals and it is used to test the classifier as known data in the open set gait recognition problem.
-- <b>Unknown test set</b>: it contains all the unit steps of the remaining 7 subjects which were not used in any training process, therefore they are unknown subjects. It is used for testing the classifier as unknown data in the open set gait recognition problem.
-
+- <b>Training set</b>: used to train the CNN, RNN, and ensemble models independently. It consists of all the unit steps of 16 individuals selected randomly.
+- <b>Unknown-Known set</b>: it contains the unit steps of 7 individuals selected randomly from the 14 remaining people after selecting the training set. This dataset is divided in two subsets. The first subset consists of 10 unit steps for each individual and it is used for training the OSVM classifier. The second subset is the remaining steps of the same 7 individuals and it is used to test the classifier as known data in the open set gait recognition problem.
+- <b>Unknown set</b>: it contains all the unit steps of the remaining 7 subjects which were not used in any training process, therefore they are unknown subjects. It is used for testing the classifier as unknown data in the open set gait recognition problem.
 
 # Evaluation
 The system is evaluated in terms of Accuracy (ACC), True Positive Rate (TPR), and True Negative Rate (TNR) defined as follows:
